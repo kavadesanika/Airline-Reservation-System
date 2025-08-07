@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("assets/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #003566;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.search-section,
+.admin-section {
+  margin: 30px 0;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #023e8a;
+}
+
+.book-btn {
+  margin-top: 20px;
+  background-color: #00b4d8;
+}
+.booking-list {
+  margin-top: 40px;
+  background-color: #ffffffcc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.booking-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.booking-list li {
+  background-color: #caf0f8;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 100px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  color: red;
+  position: absolute;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}

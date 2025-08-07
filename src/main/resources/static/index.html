@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airline Reservation System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <h1>✈️ Airline Reservation System</h1>
+    </nav>
+
+    <section class="search-section">
+      <h2>Search Flights</h2>
+      <input type="text" id="from" placeholder="From">
+      <input type="text" id="to" placeholder="To">
+      <button onclick="searchFlights()">Search</button>
+    </section>
+
+    <section class="admin-section">
+      <h2>Admin Dashboard</h2>
+      <p>Manage flights, bookings, and passengers here.</p>
+    </section>
+    <!-- Booking List Display -->
+<section class="booking-list">
+  <h2>Booked Passengers</h2>
+  <ul id="passengerList"></ul>
+</section>
+
+    <button class="book-btn" onclick="openBooking()">Book a Flight</button>
+
+    <div class="modal" id="bookingModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeBooking()">&times;</span>
+    <h3>Booking Form</h3>
+    <input type="text" id="passengerName" placeholder="Passenger Name">
+    <input type="text" id="flightId" placeholder="Flight ID">
+    <button onclick="confirmBooking()">Confirm Booking</button>
+  </div>
+</div>
+
+  </div>
+</body>
+</html>
